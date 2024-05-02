@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игра "Жизнь"</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="gameCanvas"></canvas>
+      <div id="controls">
+        <button onclick="startGame()">Старт</button>
+        <button onclick="stopGame()">Стоп</button>
+        <button onclick="clearBoard()">Очистить</button>
+        <button onclick="randomizeBoard()">Случайно</button>
+        <label for="size">Размер:</label>
+        <input type="number" id="size" value="50" min="10" max="200" />
+        <button onclick="resizeBoard()">Применить</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
